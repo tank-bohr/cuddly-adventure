@@ -1,0 +1,8 @@
+web:
+  image: nginx
+  volumes:
+   - ./www:/data/www
+   - ./assets:/data/assets
+   - ./conf.d:/etc/nginx/conf.d
+  ports:
+   - "8080:80"
